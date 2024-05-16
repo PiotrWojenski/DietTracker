@@ -4,6 +4,8 @@
 
 <div>
   <ul>
-    <li *ngFor="let item of food$ | async">{{ item.name }} {{ item.id }}</li>
+    <li *ngFor="let item of food$ | async">
+      name :{{ item.name }} {{ item.id }}
+    </li>
   </ul>
 </div>
