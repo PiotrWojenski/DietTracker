@@ -1,8 +1,8 @@
 <div>
   <ul>
     <li *ngFor="let item of food$ | async">
-      name :{{ item.name }} id: {{ item.id }} caloriesPer100g:
-      {{ item.caloriesPer100g }} photo: {{ item.photo }}
+      name :{{ item.name }} id: {{ item.id }}
+      <img src="{{ item.photo }}" alt="{{ item.name }}" />
     </li>
   </ul>
 </div>
