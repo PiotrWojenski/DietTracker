@@ -1,9 +1,8 @@
-<!-- <pre>
-    {{ food$ | async | json }}
-</pre> -->
-
 <div>
   <ul>
-    <li *ngFor="let item of food$ | async">{{ item.name }} {{ item.id }}</li>
+    <li *ngFor="let item of food$ | async">
+      name :{{ item.name }} id: {{ item.id }}
+      <img src="{{ item.photo }}" alt="{{ item.name }}" />
+    </li>
   </ul>
 </div>
