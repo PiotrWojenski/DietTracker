@@ -8,7 +8,7 @@ import { AsyncPipe, JsonPipe, NgFor } from '@angular/common';
   standalone: true,
   imports: [AsyncPipe, JsonPipe, NgFor],
   templateUrl: './foods.component.html',
-  styleUrl: './foods.component.css',
+  styleUrl: './foods.component.scss',
 })
 export class FoodsComponent implements OnInit {
   foodResponse$ = this.foodService.getFood();
