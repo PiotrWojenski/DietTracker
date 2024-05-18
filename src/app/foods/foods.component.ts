@@ -16,7 +16,17 @@ export class FoodsComponent implements OnInit {
   food$ = this.foodResponse$.pipe(map((response) => response.data)); // Get data from response
   length$ = this.foodResponse$.pipe(map((response) => response.length));
 
-  displayedColumns = ['id', 'name'];
+  displayedColumns = [
+    'id',
+    'name',
+    'caloriesPer100g',
+    'weight',
+    'nutriScore',
+    'created_at',
+    'updated_at',
+    'photo',
+    'tags',
+  ];
 
   constructor(private foodService: FoodService) {}
 
