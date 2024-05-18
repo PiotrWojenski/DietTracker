@@ -13,20 +13,10 @@ import { MatTableModule } from '@angular/material/table';
 })
 export class FoodsComponent implements OnInit {
   foodResponse$ = this.foodService.getFood();
-  food$ = this.foodResponse$.pipe(map((response) => response.data));
+  food$ = this.foodResponse$.pipe(map((response) => response.data)); // Get data from response
   length$ = this.foodResponse$.pipe(map((response) => response.length));
 
-  displayedColumns = [
-    'id',
-    'name',
-    'caloriesPer100g',
-    'weight',
-    'nutriScore',
-    'created_at',
-    'updated_at',
-    'photo',
-    'tags',
-  ];
+  displayedColumns = ['id', 'name'];
 
   constructor(private foodService: FoodService) {}
 
