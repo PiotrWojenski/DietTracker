@@ -1,13 +1,12 @@
-interface Food {
-  id: number;
-  name: string;
-  caloriesPer100g: number;
-  weight: number;
-  nutriScore: string;
-  created_at: string;
-  updated_at: string;
-  photo: string;
-  tags: string;
+import { NutriScore } from './nutri-score.model';
+
+export interface Food {
+  id?: string;
+  name?: string;
+  weight?: number;
+  caloriesPer100g?: number;
+  nutriScore?: NutriScore;
+  tags?: string[];
 }
 
 export interface FoodResponse {
