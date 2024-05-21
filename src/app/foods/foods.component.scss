@@ -1,18 +1,18 @@
 .nutriScore {
   display: flex;
   justify-content: center;
-  margin: 12px;
-  padding: 9px;
   align-items: center;
   width: 20px;
   height: 30px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
+  margin: 12px;
+  padding: 9px;
 }
 
 .nutriScore.A {
-  background-color: #2c7f43;
+  background-color: #5e9e3b;
   color: white;
 }
 
@@ -41,7 +41,7 @@ tr {
 }
 
 table th {
-  background-color: #c017a431;
+  background-color: #b909aeba;
 }
 
 tr:nth-child(odd) {

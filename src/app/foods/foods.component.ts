@@ -13,7 +13,7 @@ import { MatTableModule } from '@angular/material/table';
 })
 export class FoodsComponent implements OnInit {
   foodResponse$ = this.foodService.getFood();
-  food$ = this.foodResponse$.pipe(map((response) => response.data)); // Get data from response
+  food$ = this.foodResponse$.pipe(map((response) => response.data));
   length$ = this.foodResponse$.pipe(map((response) => response.length));
 
   displayedColumns = [
