@@ -1,31 +1,55 @@
-table {
-  width: 100%;
+.nutriScore {
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+  padding: 9px;
+  align-items: center;
+  width: 20px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-mat-table {
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+.nutriScore.A {
+  background-color: #2c7f43;
+  color: white;
+}
 
-  tr.mat-header-row {
-    background-color: #3f51b5;
-    color: #fff;
-    font-weight: bold;
-  }
+.nutriScore.B {
+  background-color: #98bb39;
+  color: white;
+}
 
-  mat-cell {
-    padding: 16px;
-    color: #212121;
-    font-family: Roboto, sans-serif;
-  }
+.nutriScore.C {
+  background-color: #d77b1b;
+  color: white;
+}
 
-  .mat-column-nutriScore {
-    text-align: center;
-  }
+.nutriScore.D {
+  background-color: #d77b1b;
+  color: white;
+}
+
+.nutriScore.E {
+  background-color: #d77b1b;
+  color: white;
+}
+
+tr {
+  cursor: pointer;
+}
+
+table th {
+  background-color: #c017a431;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(247, 246, 246, 0.466);
 }
 
 img {
   width: 70px;
   height: 60px;
-  object-fit: cover
+  object-fit: cover;
 }
