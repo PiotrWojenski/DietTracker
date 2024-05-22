@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../food.service';
-import { Observable, map } from 'rxjs';
+import { map } from 'rxjs';
 import { AsyncPipe, JsonPipe, NgFor } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 
@@ -13,7 +13,7 @@ import { MatTableModule } from '@angular/material/table';
 })
 export class FoodsComponent implements OnInit {
   foodResponse$ = this.foodService.getFood();
-  food$ = this.foodResponse$.pipe(map((response) => response.data)); // Get data from response
+  food$ = this.foodResponse$.pipe(map((response) => response.data));
   length$ = this.foodResponse$.pipe(map((response) => response.length));
 
   displayedColumns = [

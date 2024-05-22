@@ -22,8 +22,14 @@
   </ng-container>
 
   <ng-container matColumnDef="nutriScore">
-    <th mat-header-cell *matHeaderCellDef>NutriScore</th>
-    <td mat-cell *matCellDef="let item">{{ item.nutriScore }}</td>
+    <th mat-header-cell *matHeaderCellDef>nutriScore</th>
+    <td
+      class="nutriScore {{ food.nutriScore }}"
+      mat-cell
+      *matCellDef="let food"
+    >
+      {{ food.nutriScore }}
+    </td>
   </ng-container>
 
   <ng-container matColumnDef="created_at">
@@ -39,7 +45,7 @@
   <ng-container matColumnDef="photo">
     <th mat-header-cell *matHeaderCellDef>Photo</th>
     <td mat-cell *matCellDef="let item">
-      <img [src]="item.photo" alt="item.name" />
+      <img [src]="item.photo" alt="{{ item.name }}" />
     </td>
   </ng-container>
 
