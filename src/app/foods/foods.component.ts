@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../food.service';
-import { Observable, map } from 'rxjs';
+import { map } from 'rxjs';
 import { AsyncPipe, JsonPipe, NgFor } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 
