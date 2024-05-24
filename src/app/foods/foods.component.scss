@@ -35,7 +35,7 @@
 }
 
 table th {
-  background-color: #b909aeba;
+  background-color: #bc00afc8;
 }
 
 tr:nth-child(odd) {
@@ -43,7 +43,8 @@ tr:nth-child(odd) {
 }
 
 img {
-  width: 70px;
+  width: 60px;
   height: 60px;
+  border-radius: 25%;
   object-fit: cover;
 }
