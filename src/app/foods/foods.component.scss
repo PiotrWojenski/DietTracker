@@ -1,7 +1,7 @@
 .nutriScore {
   width: 10px;
   height: 20px;
-  border-radius: 25px;
+  border-radius: 30px;
   font-size: 19px;
   font-weight: bold;
   margin: 2px;
@@ -39,12 +39,12 @@ table th {
 }
 
 tr:nth-child(odd) {
-  background-color: rgba(247, 246, 246, 0.466);
+  background-color: rgba(247, 246, 246, 0.571);
 }
 
 img {
   width: 70px;
   height: 70px;
   border-radius: 25%;
-  object-fit: cover;
+  object-fit: fill;
 }
