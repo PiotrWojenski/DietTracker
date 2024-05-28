@@ -2,7 +2,7 @@
 
 <table mat-table [dataSource]="food$" class="mat-elevation-z8">
   <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef>Id</th>
+    <th mat-header-cell *matHeaderCellDef>No.</th>
     <td mat-cell *matCellDef="let item">{{ item.id }}</td>
   </ng-container>
 
@@ -24,11 +24,11 @@
   <ng-container matColumnDef="nutriScore">
     <th mat-header-cell *matHeaderCellDef>NutriScore</th>
     <td
-      class="nutriScore {{ food.nutriScore }}"
+      class="nutriScore {{ item.nutriScore }}"
       mat-cell
-      *matCellDef="let food"
+      *matCellDef="let item"
     >
-      {{ food.nutriScore }}
+      {{ item.nutriScore }}
     </td>
   </ng-container>
 
