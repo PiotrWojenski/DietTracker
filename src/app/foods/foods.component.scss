@@ -3,12 +3,12 @@
   border-radius: 15px;
   width: 30px;
   height: 50px;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  margin: 3px 0;
+  margin: 2rem auto;
+  overflow: hidden;
 }
 
 .nutriScore.A {
@@ -35,19 +35,20 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 20px 0;
-  font-size: 1rem;
-  border: 1px solid #ddd;
+  font-size: 2rem;
 }
 
 th,
 td {
   padding: 10px;
   text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
 }
 
 th {
   background-color: #c818fec8;
-  color: white;
+  font-size: 1rem;
 }
 
 tr:nth-child(even) {
