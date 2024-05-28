@@ -1,0 +1,71 @@
+.nutriScore {
+  color: white;
+  border-radius: 15px;
+  width: 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.nutriScore.A {
+  background-color: #569633;
+}
+
+.nutriScore.B {
+  background-color: #98bb39;
+}
+
+.nutriScore.C {
+  background-color: #d77b1b;
+}
+
+.nutriScore.D {
+  background-color: #d77b1b;
+}
+
+.nutriScore.E {
+  background-color: #d77b1b;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+th {
+  background-color: #c818fec8;
+  font-size: 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(247, 246, 246, 0.571);
+}
+
+tr:hover {
+  background-color: #eee;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  border-radius: 25%;
+  object-fit: fill;
+}
