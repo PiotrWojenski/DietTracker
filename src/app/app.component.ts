@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FoodsComponent } from './foods/foods.component';
+import { FoodsComponent } from './food/food.component';
 
 @Component({
   selector: 'app-root',
