@@ -7,28 +7,27 @@
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  margin: 2rem auto;
-  overflow: hidden;
+  margin: 30px auto;
 }
 
 .nutriScore.A {
-  background-color: #569633;
+  background-color: #00823f;
 }
 
 .nutriScore.B {
-  background-color: #98bb39;
+  background-color: #86bc2b;
 }
 
 .nutriScore.C {
-  background-color: #d77b1b;
+  background-color: #fecc00;
 }
 
 .nutriScore.D {
-  background-color: #d77b1b;
+  background-color: #ef8200;
 }
 
 .nutriScore.E {
-  background-color: #d77b1b;
+  background-color: #e73c09;
 }
 
 table {
@@ -37,34 +36,29 @@ table {
   font-size: 2rem;
 }
 
-th,
-td {
-  padding: 10px;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 16px;
-}
-
-th {
-  background-color: #c818fec8;
-  font-size: 1rem;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-tr:nth-child(odd) {
-  background-color: rgba(247, 246, 246, 0.571);
-}
-
 tr:hover {
   background-color: #eee;
 }
 
 img {
-  width: 70px;
+  width: 80px;
   height: 70px;
   border-radius: 25%;
-  object-fit: fill;
+  object-fit: cover;
+}
+
+.mat-mdc-table th {
+  background-color: rgba(200, 24, 254, 0.226);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.mat-mdc-cell {
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.mat-mdc-row {
+  border-bottom: 1px solid #ddd;
 }
