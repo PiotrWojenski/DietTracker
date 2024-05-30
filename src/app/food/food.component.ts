@@ -5,11 +5,11 @@ import { AsyncPipe, JsonPipe, NgFor } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 
 @Component({
-  selector: 'app-foods',
+  selector: 'app-food',
   standalone: true,
   imports: [AsyncPipe, JsonPipe, NgFor, MatTableModule],
-  templateUrl: './foods.component.html',
-  styleUrls: ['./foods.component.scss'],
+  templateUrl: './food.component.html',
+  styleUrls: ['./food.component.scss'],
 })
 export class FoodsComponent implements OnInit {
   foodResponse$ = this.foodService.getFood();
