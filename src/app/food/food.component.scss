@@ -33,7 +33,7 @@
 table {
   border-collapse: collapse;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 tr:hover {
@@ -43,19 +43,19 @@ tr:hover {
 img {
   width: 80px;
   height: 70px;
-  border-radius: 25%;
+  border-radius: 27%;
   object-fit: cover;
 }
 
 .mat-mdc-table th {
-  background-color: rgba(200, 24, 254, 0.226);
-  font-size: 1.5rem;
+  background-color: rgba(174, 31, 218, 0.226);
+  font-size: 1.3rem;
   text-align: center;
 }
 
 .mat-mdc-cell {
-  font-size: 1.5rem;
-  padding: 10px;
+  font-size: 1rem;
+  padding: 5px;
   text-align: center;
 }
 

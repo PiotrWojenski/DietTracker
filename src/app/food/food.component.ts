@@ -3,18 +3,20 @@ import { FoodService } from '../food.service';
 import { map } from 'rxjs';
 import { AsyncPipe, JsonPipe, NgFor } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
+import { FoodStateService } from '../food-state.service';
+import { Food } from '../food.model';
 
 @Component({
-  selector: 'app-foods',
+  selector: 'app-food',
   standalone: true,
   imports: [AsyncPipe, JsonPipe, NgFor, MatTableModule],
-  templateUrl: './foods.component.html',
-  styleUrls: ['./foods.component.scss'],
+  templateUrl: './food.component.html',
+  styleUrls: ['./food.component.scss'],
 })
 export class FoodsComponent implements OnInit {
-  foodResponse$ = this.foodService.getFood();
-  food$ = this.foodResponse$.pipe(map((response) => response.data));
-  length$ = this.foodResponse$.pipe(map((response) => response.length));
+  // foodResponse$ = this.foodService.getFood();
+  food$ = this.foodState.food$;
+  length$ = this.food$.pipe(map((foods) => foods.length));
 
   displayedColumns = [
     'id',
@@ -26,9 +28,15 @@ export class FoodsComponent implements OnInit {
     'updated_at',
     'photo',
     'tags',
+    'actions',
   ];
 
-  constructor(private foodService: FoodService) {}
+  constructor(private foodState: FoodStateService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.foodState.getFood();
+  }
+  onDelteClick(id: Food['id']) {
+    this.foodState.deleteFood(id);
+  }
 }
